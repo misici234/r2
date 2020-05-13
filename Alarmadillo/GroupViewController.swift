@@ -75,7 +75,7 @@ class GroupViewController: UITableViewController, UITextFieldDelegate {
 
 			let alarm = group.alarms[indexPath.row]
 			cell.textLabel?.text = alarm.name
-			cell.detailTextLabel?.text = DateFormatter.localizedString(from: alarm.time, dateStyle: .none, timeStyle: .short)
+            cell.detailTextLabel?.text = DateFormatter.localizedString(from: alarm.time, dateStyle: .none, timeStyle: .medium)
 
 			return cell
 		}
